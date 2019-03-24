@@ -5,7 +5,6 @@
 - [Asymptotic notation](#asymptotic-notation)
 - [Big-O](#big-o)
 - [Using Big-O](#using-big-o)
-- [Logarithms](#logarithms)
 
 ## Asymptotic notation
 
@@ -50,11 +49,8 @@ Warnings:
 - Using Big-O loses important information about constant multiples.
 - Big-O is only asymptotic.
 
-## Using Big-O
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO3.PNG" />
-
-Other notations:
+- Other notations:
 
 For functions f , g : N → R+ we say that:
 
@@ -69,3 +65,6 @@ We use o-notation to denote an upper bound that is not asymptotically tight.
 The definitions of O-notation and o-notation are similar. The main difference
 is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some constant c > 0, but in f (n) = o(g(n)), the bound 0 ≤ f (n) < c · g(n) holds for all constants c > 0.
 
+## Using Big-O
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO3.PNG" />
