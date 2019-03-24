@@ -1,4 +1,4 @@
-- [Index](https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/README.md#table-of-contents)
+- [Index](https://github.com/KiraDiShira/Cracking/blob/master/README.md#cracking)
 
 # Big-O Notation
 
@@ -42,7 +42,7 @@ This sort of asymptotic, large scale behavior is actually what you care about a 
 
 ## Big-O
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigONotaions.PNG" />
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO2.PNG" />
 
 Big-O notation is an asymptotic notation.
  
@@ -63,7 +63,7 @@ Warnings:
 
 ## Using Big-O
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO2.PNG" />
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO3.PNG" />
 
 Example:
 
@@ -88,8 +88,3 @@ We use o-notation to denote an upper bound that is not asymptotically tight.
 The definitions of O-notation and o-notation are similar. The main difference
 is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some constant c > 0, but in f (n) = o(g(n)), the bound 0 ≤ f (n) < c · g(n) holds for all constants c > 0.
 
-## Logarithms
-
-The main rules for working with logarithms are the following:
-
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO5.jpg" />
