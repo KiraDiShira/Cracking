@@ -38,11 +38,11 @@ Only caring about what happens in this sort of long scale behavior, we will be a
 
 This sort of asymptotic, large scale behavior is actually what you care about a lot of the time, because you really want to know: what happens when I run my program on very large inputs? 
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO1.PNG" />
 
 ## Big-O
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO2.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO2.PNG" />
 
 Big-O notation is an asymptotic notation.
  
@@ -63,15 +63,7 @@ Warnings:
 
 ## Using Big-O
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO3.PNG" />
-
-Example:
-
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO3.PNG" />
-
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BigONotation/Images/BigO4.PNG" />
-
-For huge numbers (that doesn't fit in the integer type) summing up it is not constant, but proportional to the number of digits.
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO3.PNG" />
 
 Other notations:
 
