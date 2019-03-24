@@ -1,3 +1,3 @@
 # Cracking
 
-- [Big-O Notation](https://github.com/KiraDiShira/AlgorithmsAndDataStructures/tree/master/RepoFiles/BigONotation#big-o-notation)
+- [Big-O Notation](https://github.com/KiraDiShira/Cracking/tree/master/BigONotation#big-o-notation)
