@@ -49,8 +49,7 @@ Warnings:
 - Using Big-O loses important information about constant multiples.
 - Big-O is only asymptotic.
 
-
-- Other notations:
+### Other notations:
 
 For functions f , g : N → R+ we say that:
 
