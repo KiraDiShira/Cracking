@@ -2,6 +2,9 @@
 
 # Userful Math
 
+- [Sum of integers 1 through N](#sum-of-integers-1-through-n)
+- [Sum of Powers of 2](#sum-of-powers-of-2)
+
 ## Sum of integers 1 through N
 
 What is `1 + 2 + ... + n`? Let's figure it out by pairing up low values with hig values.
