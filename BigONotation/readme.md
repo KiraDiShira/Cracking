@@ -67,3 +67,7 @@ is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some c
 ## Using Big-O
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO3.PNG" />
+
+When you see a problem where the number of elements in the problem space gets halved each time, that will likely be a `O(log N)` runtime.
+
+When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like `O(branches ^ depth)`, where branches is the nuber of times each recursive call branches.
