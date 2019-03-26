@@ -27,7 +27,7 @@ In either case, the sum is `n * (n +1) / 2`
 ### Permutazioni
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p1.PNG" />
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p2.PNG" />
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p3.PNG" />
 
 ### Disposizioni
