@@ -26,12 +26,23 @@ In either case, the sum is `n * (n +1) / 2`
 
 ### Permutazioni
 
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p3.PNG" />
+
 ### Disposizioni
 
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p4.PNG" />
+
 ### Combinazioni
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p5.PNG" />
 
 Differenza fra le combinazioni e le disposizioni.
 
 Se voglio fare un gruppetto ordinato di k elementi preso da un gruppo di partenza di n allora dovrò fare le disposizioni. Se mi interessa ordine in cui compaiono: disposizioni. 
 
 Se invece mi interessa solo chi c è all’interno del gruppo di k elementi parlerò di combinazioni.
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/UsefulMath/Images/p6.PNG" />
+
