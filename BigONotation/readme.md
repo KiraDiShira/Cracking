@@ -26,11 +26,11 @@ So the key idea is if we come up with a measure of runtime complexity that ignor
 
 Only caring about what happens in this sort of long scale behavior, we will be able to do this without seeing these constants, without having to care about these details.  
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO1.PNG" />
 
 ## Big-O
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO2.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO2.PNG" />
 
 Big-O notation is an asymptotic notation.
  
@@ -66,7 +66,7 @@ is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some c
 
 ## Using Big-O
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BigONotation/Images/BigO3.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO3.PNG" />
 
 When you see a problem where the number of elements in the problem space gets halved each time, that will likely be a `O(log N)` runtime.
 
