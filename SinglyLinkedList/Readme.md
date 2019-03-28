@@ -195,6 +195,9 @@ public void PopBack()
 }
 
 ```
+
+<div style="page-break-before: always !important;"/>
+
 ### Add After
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice5.PNG" />
