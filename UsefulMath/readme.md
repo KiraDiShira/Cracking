@@ -22,6 +22,8 @@ In either case, the sum is `n * (n +1) / 2`
 
 `2^(n + 1) - 1`
 
+<div style="page-break-before: always !important;"/>
+
 ## Combinatorics
 
 ### Permutazioni
