@@ -39,6 +39,8 @@ public class SinglyLinkedList
 
 ```
 
+<div style="page-break-before: always !important;"/>
+
 ## List API
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll2b.PNG" />
