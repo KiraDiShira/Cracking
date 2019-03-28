@@ -80,6 +80,8 @@ public void PushFront(object key)
 
 ```
 
+<div style="page-break-before: always !important;"/>
+
 ### PopFront
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll6.PNG" />
