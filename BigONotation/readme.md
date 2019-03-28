@@ -28,6 +28,7 @@ Only caring about what happens in this sort of long scale behavior, we will be a
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO1.PNG" />
 
+<div style="page-break-before: always !important;"/>
 ## Big-O
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO2.PNG" />
@@ -63,6 +64,7 @@ We use o-notation to denote an upper bound that is not asymptotically tight.
 
 The definitions of O-notation and o-notation are similar. The main difference is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some constant c > 0, but in f (n) = o(g(n)), the bound 0 ≤ f (n) < c · g(n) holds for all constants c > 0.
 
+<div style="page-break-before: always !important;"/>
 ## Using Big-O
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO3.PNG" />
