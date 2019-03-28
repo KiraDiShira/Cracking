@@ -1,5 +1,3 @@
-- [Index](https://github.com/KiraDiShira/Cracking/blob/master/README.md#cracking)
-
 # Big-O Notation
 
 - [Asymptotic notation](#asymptotic-notation)
