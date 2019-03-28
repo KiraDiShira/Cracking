@@ -32,6 +32,8 @@ In either case, the sum is `n * (n +1) / 2`
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/UsefulMath/Images/p2.PNG" />
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/UsefulMath/Images/p3.PNG" />
 
+<div style="page-break-before: always !important;"/>
+
 ### Disposizioni
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/UsefulMath/Images/p4.PNG" />
