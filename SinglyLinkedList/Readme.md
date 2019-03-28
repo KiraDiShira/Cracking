@@ -14,7 +14,7 @@
 
 It's possible to have also a **Tail**: a pointer to the last node.
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/Tail.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/Tail.PNG" />
 
 ```c#
 
@@ -41,20 +41,20 @@ public class SinglyLinkedList
 
 ## List API
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll2b.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll2b.PNG" />
 
 
 ## Times for Some Operations
 
 ### PushFront
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll3.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll3.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll4.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll4.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll5.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll5.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/codice1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice1.PNG" />
 
 ```c#
 
@@ -80,13 +80,13 @@ public void PushFront(object key)
 
 ### PopFront
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll6.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll6.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll7.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll7.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll8.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll8.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/codice2.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice2.PNG" />
 
 ```c#
 
@@ -108,23 +108,23 @@ public void PopFront()
 
 ### Times for PushBack (no tail)
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll9.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll9.PNG" />
 
 ### Times for PopBack (no tail)
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll10.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll10.PNG" />
 
 ### Times for PushBack (with tail)
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll11.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll11.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll12.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll12.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll13.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll13.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll14.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll14.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/codice3.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice3.PNG" />
 
 ```c#
 
@@ -152,15 +152,15 @@ public void PushBack(object key)
 
 ### Times for PopBack (with tail)
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll15.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll15.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll16.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll16.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll17.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll17.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll18.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll18.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/codice4.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice4.PNG" />
 
 ```c#
 public void PopBack()
@@ -193,7 +193,7 @@ public void PopBack()
 ```
 ### Add After
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/codice5.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice5.PNG" />
 
 ```c#
 
@@ -370,7 +370,7 @@ public override string ToString()
 
 ## Summary
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/codice6.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/codice6.PNG" />
 
 If I need a reference to a node different from the `Head` or the `Tail` the running time is `O(n)`.
 
