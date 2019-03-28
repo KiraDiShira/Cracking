@@ -11,14 +11,14 @@
 **Runtimes** is how long takes a program to work;
 
 Computing runtimes is hard:
-- depends on fine details of program
+- depends on details of program
 - depends on details of computer
 
 We need something that's a little bit less precise but much easier to work with.
 
 - **Basic idea**: there are lots of factors that have an effect on the final runtime but, most of them will only change the runtimes by a constant. If you're running on a computer that's a hundred times faster, it will take one hundreth of the time, a constant multiple. If your system architecture has multiplications that take three times as long as additions, then if your program is heavy on multiplications instead of additions, it might take three times as long, but it's only a factor of three. If your memory hierarchy is arranged in a different way, you might have to do disk lookups instead of RAM lookups. And those will be a lot slower, but only by a constant multiple. 
 
-So the key idea is if we come up with a measure of runtime complexity that ignores all of these constant multiples, where running in time n and in running in time 100n are sort of considered to be the same thing, then we don't have to worry about all of these little, bitty details that affect runtime. 
+So if we come up with a measure of runtime complexity that ignores all of constant multiples, where running in time `n` and in running in time `100n` are sort of considered to be the same thing, then we don't have to worry about all of these little, bitty details that affect runtime. 
 
 - **Problem**: runtimes of 1 second or 1 hour or 1 year, these only differ by constant multiples.
 
@@ -61,8 +61,7 @@ For functions f , g : N → R+ we say that:
 
 We use o-notation to denote an upper bound that is not asymptotically tight. 
 
-The definitions of O-notation and o-notation are similar. The main difference
-is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some constant c > 0, but in f (n) = o(g(n)), the bound 0 ≤ f (n) < c · g(n) holds for all constants c > 0.
+The definitions of O-notation and o-notation are similar. The main difference is that in f (n) = O(g(n)), the bound 0 ≤ f (n) ≤ c · g(n) holds for some constant c > 0, but in f (n) = o(g(n)), the bound 0 ≤ f (n) < c · g(n) holds for all constants c > 0.
 
 ## Using Big-O
 
