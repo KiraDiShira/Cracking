@@ -1,4 +1,4 @@
-* [Index](https://github.com/KiraDiShira/Cracking#cracking)
+<div style="page-break-before: always !important;"/>
 
 # Array
 
