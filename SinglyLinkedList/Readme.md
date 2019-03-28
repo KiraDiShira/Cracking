@@ -1,4 +1,4 @@
-* [Index](https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/README.md#project-title)
+<div style="page-break-before: always !important;"/>
 
 # Singly-Linked Lists
 
@@ -10,7 +10,7 @@
 
 ## Definition
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/SinglyLinkedList/Images/sll1b.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/SinglyLinkedList/Images/sll1b.PNG" />
 
 It's possible to have also a **Tail**: a pointer to the last node.
 
