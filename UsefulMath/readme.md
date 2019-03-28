@@ -1,6 +1,6 @@
-- [Index](https://github.com/KiraDiShira/Cracking/blob/master/README.md#cracking)
+<div style="page-break-before: always !important;"/>
 
-# Userful Math
+# Useful Math
 
 - [Sum of integers 1 through N](#sum-of-integers-1-through-n)
 - [Sum of Powers of 2](#sum-of-powers-of-2)
