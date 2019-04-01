@@ -73,4 +73,4 @@ The definitions of O-notation and o-notation are similar. The main difference is
 
 When you see a problem where the number of elements in the problem space gets halved each time, that will likely be a `O(log N)` runtime.
 
-When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like `O(branches ^ depth)`, where branches is the nuber of times each recursive call branches.
+When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like `O(branches ^ depth)`, where branches is the number of times each recursive call branches.
