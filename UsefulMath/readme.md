@@ -8,7 +8,7 @@
 
 ## Sum of integers 1 through N
 
-What is `1 + 2 + ... + n`? Let's figure it out by pairing up low values with hig values.
+What is `1 + 2 + ... + n`? Let's figure it out by pairing up low values with high values.
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/UsefulMath/Images/um1.PNG" />
 
