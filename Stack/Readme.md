@@ -35,7 +35,7 @@ Each stack operation is `O(1)`: Push, Pop, Top, Empty.
 * `([]]()`
 * `][`
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/AlgorithmsAndDataStructures/master/RepoFiles/Stack/Images/st1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Stack/Images/st1.PNG" />
 
 ```c#
 
@@ -147,7 +147,7 @@ public class MyStack<T>
 ```
 ## Stack Implementation with Linked List
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/AlgorithmsAndDataStructures/master/RepoFiles/Stack/Images/sst1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Stack/Images/sst1.PNG" />
 
 One limitation of the array is that we have a maximum size, based on the array we initially allocated. 
 
