@@ -1,5 +1,3 @@
-* [Index](https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/README.md#project-title)
-
 # Doubly-Linked Lists
 
 * [Definition](#definition)
