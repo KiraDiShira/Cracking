@@ -87,6 +87,8 @@ private static bool IsOpenBracket(char character)
 
 ## Stack Implementation with Array
 
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Stack/Images/arr1.PNG" />
+
 ```c#
 
 public class MyStack<T>
