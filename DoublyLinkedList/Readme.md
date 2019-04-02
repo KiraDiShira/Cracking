@@ -34,17 +34,17 @@ public class DoublyLinkedList
 
 **Doubly-Linked Lists**:
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll1.PNG" />
 
 ## Times for some operations
 
 ### PopBack
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll2.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll3.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll4.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll5.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll6.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll2.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll3.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll4.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll5.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll6.PNG" />
 
 ```c#
 
@@ -70,7 +70,7 @@ public void PopBack()
 
 ### PushBack
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll7.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll7.PNG" />
 
 ```c#
 
@@ -100,7 +100,7 @@ public void PushBack(object key)
 
 ### AddAfter
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll8.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll8.PNG" />
 
 ```c#
 
@@ -131,7 +131,7 @@ public void AddAfter(Node node, object key)
 
 ### AddBefore
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll9.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll9.PNG" />
 
 ```c#
 
@@ -166,4 +166,4 @@ public void AddBefore(Node node, object key)
 
 ### Summary
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DoublyLinkedList/Images/dll10.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DoublyLinkedList/Images/dll10.PNG" />
