@@ -26,7 +26,7 @@ One distinction between the array and the linked list implementation, is that in
 
 ## Queue Implementation with Linked List
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/Queues/q1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Queues/q1.PNG" />
 
 With a linked list, where you have a head and a tail pointer. 
 
@@ -77,7 +77,7 @@ If the linked-list is implemente as a singly-linked-list, Dequeue would be `O(n)
 
 ## Queue Implementation with Array
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/Queues/q2.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Queues/q2.PNG" />
 
 We could add at the end and then pop from the front. Then enqeueing is easy, but dequeuing would be an expensive `O(n)` operation. And we want enqeueing to be `O(1)`. We can do that, in a fashion I'll show you right now which is basically keeping track of sort of the array as a circular array: so we need a write index and a reading index.
 
