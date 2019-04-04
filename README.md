@@ -7,5 +7,6 @@
 - [Doubly-Linked Lists](https://github.com/KiraDiShira/Cracking/blob/master/DoublyLinkedList/Readme.md#doubly-linked-lists)
 - [Stack](https://github.com/KiraDiShira/Cracking/blob/master/Stack/Readme.md#stack)
 - [Queue](https://github.com/KiraDiShira/Cracking/blob/master/Queues/Readme.md#queues)
+- [Tree](https://github.com/KiraDiShira/Cracking/blob/master/Tree/Readme.md#tree)
 
 https://github.com/yakivmospan/github-wikito-converter
