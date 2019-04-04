@@ -64,13 +64,25 @@ public class TreeApi<T>
     }
 ```
 
+### Binary Search Tree
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree2_b.PNG" />
+
+The binary search tree it's binary: it has at most two children at each node.
+
+And we have the property that at the root node, the value of that root node is greater than or equal to all of the nodes in the left child, and it's less than the nodes in the right child. 
+
+The binary search tree allows you to search quickly. For instance, if we wanted to search in this tree for Tony, we could start at Les. Notice that we are greater than Les, so therefore, we're going to go right. We're greater than Sam so we'll go right. We're less than Violet so we'll go left and then we find Tony. And we do that in just four comparisons. It's a lot like a binary search in a sorted array.
+
+## Tree Traversal
+
 Often we want to visit the nodes of a tree in a particular order. For example, print the nodes of the tree.
 
 **Depth-first**: We completely traverse one sub-tree before exploring a sibling sub-tree.
 
 **Breadth-first**: We traverse all nodes at one level before progressing to the next level.
 
-## Depth-first
+### Depth-first
 
 In order traversal has a meaning only for binary tree, because every tree has maximum two child and between them I can insert the print procedure.
 
@@ -221,7 +233,7 @@ There is also a PostOrder iterative single stack implementation:
 
 https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/
 
-## Breath-first
+### Breath-first
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree9.PNG" />
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree10.PNG" />
