@@ -40,30 +40,6 @@ public class Tree<T>
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree2.PNG" />
 
-```c#
-public class TreeApi<T>
-{
-    public int Height(Tree<T> tree)
-    {
-        if (tree == null)
-        {
-            return 0;
-        }
-
-        return 1 + Math.Max(Height(tree.Left), Height(tree.Right));
-    }
-
-    public int Size(Tree<T> tree)
-    {
-        if (tree == null)
-        {
-            return 0;
-        }
-
-        return 1 + Size(tree.Left) + Size(tree.Right);
-    }
-```
-
 ### Binary Search Tree
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree2_b.PNG" />
