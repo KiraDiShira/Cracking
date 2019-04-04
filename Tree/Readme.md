@@ -34,11 +34,11 @@ public class Tree<T>
 
 **Height**: maximum depth of subtree node and farthest leaf
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree1.PNG" />
 
 **Size**: number of nodes
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree2.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree2.PNG" />
 
 ```c#
 public class TreeApi<T>
@@ -76,8 +76,8 @@ In order traversal has a meaning only for binary tree, because every tree has ma
 
 Depth-first search now is implemented in a recursive way, but it can also be implemented with an iterative alghoritm and a stack.
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree3.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree4.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree3.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree4.PNG" />
 
 ```c#
 public void InOrderRecursiveTraversal(Tree<T> tree)
@@ -126,8 +126,8 @@ public void InOrderIterativeTraversal(Tree<T> tree)
 
 ```
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree5.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree6.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree5.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree6.PNG" />
 
 ```c#
 public void PreOrderRecursiveTraversal(Tree<T> tree)
@@ -169,8 +169,8 @@ public void PreOrderIterativeTraversal(Tree<T> tree)
 
 ```
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree7.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree8.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree7.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree8.PNG" />
 
 ```c#
 public void PostOrderRecursiveTraversal(Tree<T> tree)
@@ -223,8 +223,8 @@ https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/
 
 ## Breath-first
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree9.PNG" />
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Tree/Images/tree10.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree9.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/Tree/Images/tree10.PNG" />
 
 ```c#
 public void BreathFirst(Tree<T> tree)
