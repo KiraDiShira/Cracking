@@ -118,7 +118,7 @@ Amortized Cost = Cost(n operations) / n
 
  For instance, consider the following sequence of insertions, starting with an array of length 1:
  
- <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/RepoFiles/DynamicArraysandAmortizedAnalysis/Images/daaa7.PNG" />
+ <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa7.PNG" />
  
  The table is doubled in the second, third, and fifth steps. As each insertion takes `O(n)` time in the worst case, a simple analysis would yield a bound of `O(n^2)` time for n insertions. But it is not this bad. 
  
