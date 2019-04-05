@@ -143,6 +143,9 @@ Amortized Cost = Cost(n operations) / n
  Then summing over the entire sequence, all the 1's sum to `O(n)`, and all the di also sum to `O(n)`. That is,
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa11.PNG" />
+
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/pb5.PNG" />
   
 So we've got `n` plus something no more than `2n`, that's clearly `O(n)` divided by `n`, and that's just `O(1)`. So what we've determined then is that we have a amortized cost for each insertion of order 1. 
 
