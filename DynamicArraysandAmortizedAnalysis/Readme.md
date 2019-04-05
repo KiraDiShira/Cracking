@@ -7,8 +7,7 @@
     - [Runtimes](#runtimes)
 * Amortized Analysis
     - [Aggregate Method](#aggregate-method)
-    - [Banker's Method](#bankers-method)
-    - [Physicist's method](http://www.cs.cornell.edu/courses/cs3110/2013sp/lectures/lec21-amortized/lec21.html)
+    - [Online resource](http://www.cs.cornell.edu/courses/cs3110/2013sp/lectures/lec21-amortized/lec21.html)
 * [Summary](#summary)
 
 
@@ -119,7 +118,7 @@ Amortized Cost = Cost(n operations) / n
 
  For instance, consider the following sequence of insertions, starting with an array of length 1:
  
- <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/master/RepoFiles/DynamicArraysandAmortizedAnalysis/Images/daaa7.PNG" />
+ <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/RepoFiles/DynamicArraysandAmortizedAnalysis/Images/daaa7.PNG" />
  
  The table is doubled in the second, third, and fifth steps. As each insertion takes `O(n)` time in the worst case, a simple analysis would yield a bound of `O(n^2)` time for n insertions. But it is not this bad. 
  
