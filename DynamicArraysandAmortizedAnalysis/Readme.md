@@ -134,7 +134,7 @@ Amortized Cost = Cost(n operations) / n
  
  Let's consider the size of the table si and the cost ci for the first few insertions in a sequence:
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa9.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/pb4.PNG" />
  
  Alteratively we can see that `c_i=1+d_i` where `d_i` is the cost of doubling the table size. 
  
