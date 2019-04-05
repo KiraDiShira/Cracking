@@ -24,15 +24,15 @@ Unlike static arrays, dynamic arrays can be resized. Solution: dynamic arrays (a
 
 ### Implementation
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa1.PNG" />
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa2.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa2.PNG" />
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa3.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa3.PNG" />
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa4.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa4.PNG" />
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa5.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa5.PNG" />
 
 ```c#
 
@@ -102,7 +102,7 @@ public class DynamicArray<T>
 ```
 ### Runtimes
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa6.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa6.PNG" />
 
 ## Aggregate Method
 
@@ -119,25 +119,25 @@ Amortized Cost = Cost(n operations) / n
 
  For instance, consider the following sequence of insertions, starting with an array of length 1:
  
- <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DynamicArraysandAmortizedAnalysis/Images/daaa7.PNG" />
+ <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/master/RepoFiles/DynamicArraysandAmortizedAnalysis/Images/daaa7.PNG" />
  
  The table is doubled in the second, third, and fifth steps. As each insertion takes `O(n)` time in the worst case, a simple analysis would yield a bound of `O(n^2)` time for n insertions. But it is not this bad. 
  
  Let c_i be the cost of the i-th insertion:
  
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa8.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa8.PNG" />
  
  Let's consider the size of the table si and the cost ci for the first few insertions in a sequence:
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa9.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa9.PNG" />
  
  Alteratively we can see that `c_i=1+d_i` where `d_i` is the cost of doubling the table size. 
  
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa10.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa10.PNG" />
  
  Then summing over the entire sequence, all the 1's sum to `O(n)`, and all the di also sum to `O(n)`. That is,
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa11.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa11.PNG" />
   
 So we've got `n` plus something no more than `2n`, that's clearly `O(n)` divided by `n`, and that's just `O(1)`. So what we've determined then is that we have a amortized cost for each insertion of order 1. 
 
@@ -151,6 +151,6 @@ Can we use a constant amount (+10 for instance), intead of a constant factor (* 
 
 So this shows that if we use a constant amount to grow the dynamic array each time that we end up with an amortized cost for push back of O(n) rather than O(1). So it's extremely important to use a constant factor. 
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Images/daaa22.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa22.PNG" />
 
 So this shows that if we use a constant amount to grow the dynamic array each time that we end up with an amortized cost for push back of O(n) rather than O(1). So it's extremely important to use a constant factor. 
