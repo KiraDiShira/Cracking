@@ -21,6 +21,12 @@ Unlike static arrays, dynamic arrays can be resized. Solution: dynamic arrays (a
 * `Remove(i)`: Removes element at location `i`
 * `Size()`: the number of elements
 
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/pb1.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/pb2.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/pb3.PNG" />
+
 ### Implementation
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa1.PNG" />
