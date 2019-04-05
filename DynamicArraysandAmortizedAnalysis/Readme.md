@@ -132,7 +132,7 @@ Amortized Cost = Cost(n operations) / n
  
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/daaa8.PNG" />
  
- Let's consider the size of the table si and the cost ci for the first few insertions in a sequence:
+ Let's consider the capacity of the table si and the cost ci for the first few insertions in a sequence:
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/DynamicArraysandAmortizedAnalysis/Images/pb4.PNG" />
  
