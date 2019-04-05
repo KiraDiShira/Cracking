@@ -1,4 +1,4 @@
-* [Index](https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/README.md#project-title)
+* [Index](https://github.com/KiraDiShira/Cracking#cracking)
 
 # Dynamic Arrays and Amortized Analysis
 
