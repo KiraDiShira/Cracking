@@ -74,8 +74,17 @@ Example:
 
 Not an example:
 
-
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/bh2.PNG" />
+
+## Basic operations
+
+**Get Max**
+
+The maximum value is stored in the root of the tree.
+
+To implement GetMax, we just return the value at the root of our tree: O(1)
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/getmax.PNG" />
 
 ```c#
 
