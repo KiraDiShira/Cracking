@@ -78,13 +78,30 @@ Not an example:
 
 ## Basic operations
 
-**Get Max**
+### Get Max
 
 The maximum value is stored in the root of the tree.
 
 To implement GetMax, we just return the value at the root of our tree: O(1)
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/getmax.PNG" />
+
+### Insert
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/insert1.PNG" />
+
+- attach a new node to any leaf
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/insert2.PNG" />
+
+- this may violate the heap property, as in this case.
+- to fix this, we let the new node **sift up**: swap the problematic node with its parent until the property is satisfied.
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/insert3.PNG" />
+
+While sift up the heap property is violated on at most one edge of our binary tree. 
+
+This in particular implies that the number of swaps required is at most the height of this tree. Which in turn means that the running time of insertion procedure, as well as the running time of the sifting up procedure, is `O(tree height)`.
 
 ```c#
 
