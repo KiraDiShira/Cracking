@@ -41,7 +41,7 @@
 
 **Sorted array**
  
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/sortedarray.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/sortedArray.PNG" />
  
 - Extract Max()
   - extract the last element: O(1)
