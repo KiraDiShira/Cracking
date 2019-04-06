@@ -30,30 +30,34 @@
 
 **Unsorted array/list**
 
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/unsorted.PNG" />
+
 - Insert(e)
   - add e to the end 
   - running time O(1)
 - Extract Max()
   - scan the array/list 
   - running time O(n)
-  
+
 **Sorted array**
+ 
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/sortedarray.PNG" />
  
 - Extract Max()
   - extract the last element: O(1)
 - Insert(e)
   - find a position for e (O(log(n) by using binary search)), shift all elements to the right by 1 (O(n)), insert e (O(1))
   - running time O(n)
-  
+
 **Sorted list**
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/sortedlist.PNG" />
 
 - Extract Max()
   - extract the last element: O(1)
 - Insert(e)
   - find a position for e (O(n)), insert e (O(1))
   - running time: O(n)
-  
-
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/pq1.PNG" />
 
