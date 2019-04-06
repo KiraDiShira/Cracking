@@ -4,7 +4,7 @@
 
 * [Definition](#definition)
 * [Naive implementation](#naive-implementation)
-* [Priority queue: heaps]()
+* [Priority queue: heaps](#priority-queue-heaps)
 * [Summary](#summary)
   
 ## Definition
