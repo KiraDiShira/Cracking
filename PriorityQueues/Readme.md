@@ -3,7 +3,8 @@
 # Priority Queues
 
 * [Definition](#definition)
-* [Implementation](#implementation)
+* [Naive implementation](#naive-implementation)
+* [Priority queue: heaps]()
 * [Summary](#summary)
   
 ## Definition
@@ -26,7 +27,7 @@
 * `Huffman’s algorithm`: constructing an optimum prefix-free encoding of a string
 * `Heap sort`: sorting a given sequence
 
-## Implementation
+## Naive implementation
 
 **Unsorted array/list**
 
@@ -60,6 +61,9 @@
   - running time: O(n)
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/pq1.PNG" />
+
+## Priority queue: heaps
+
 
 ```c#
 
