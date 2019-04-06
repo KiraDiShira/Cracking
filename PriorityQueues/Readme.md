@@ -68,7 +68,14 @@ A binary heap is one of the most common ways of implementing a priority queue.
 
 So just by definition a **max binary heap** is a binary tree (each node has zero, one, or two children) where the value of each the node is at least the value of all its children. 
 
+Example:
 
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/bh1.PNG" />
+
+Not an example:
+
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/bh2.PNG" />
 
 ```c#
 
