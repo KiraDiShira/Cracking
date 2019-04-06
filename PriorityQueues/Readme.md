@@ -55,7 +55,7 @@
   
 
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/PriorityQueues/Images/pq1.PNG" />
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/pq1.PNG" />
 
 ```c#
 
