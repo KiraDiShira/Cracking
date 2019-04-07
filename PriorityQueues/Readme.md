@@ -111,12 +111,11 @@ This in particular implies that the number of swaps required is at most the heig
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax2.PNG" />
 
-<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax3.PNG" />
-
-
 - this may violate the heap property, as in this case (on two edges).
 - to fix it, we let the problematic node **sift down**: we swap the problematic node with larger child until the heap property is satisfied.
 - we swap with the larger child which automatically fixes one of the two bad edges
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax3.PNG" />
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax4.PNG" />
 
