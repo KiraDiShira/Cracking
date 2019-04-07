@@ -121,6 +121,18 @@ This in particular implies that the number of swaps required is at most the heig
 
 the total running time of the extract max as well as the sift down procedures is `O(tree height)`.
 
+### Change priority
+
+Change the priority and let the changed element sift up or down depending on whether its priority decreased or increased.
+
+Running time: `O(tree height)`.
+
+### Remove
+
+Change the priority of the element to `+Inf`, let it sift up, and then extract maximum.
+
+Running time: `O(tree height)`.
+
 ```c#
 
 using System;
