@@ -7,6 +7,7 @@
 * [Priority queue: heaps](#priority-queue-heaps)
 * [Basic operations](#basic-operations)
 * [Complete binary tree](#complete-binary-tree)
+* [Code](#code)
 * [Summary](#summary)
   
 ## Definition
@@ -180,6 +181,8 @@ To extract the maximum value, replace the root by the last leaf and let it  sift
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt7.PNG" />
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt8.PNG" />
+
+## Code
 
 ```c#
 
