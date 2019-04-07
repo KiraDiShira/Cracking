@@ -84,8 +84,7 @@ Not an example:
 
 The maximum value is stored in the root of the tree.
 
-To implement GetMax, we just return the value at the root of our tree: O(1)
-
+To implement GetMax, we just return the value at the root of our tree: `O(1)`
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/getmax.PNG" />
 
 ### Insert
@@ -136,6 +135,18 @@ Change the priority of the element to `+Inf`, let it sift up, and then extract m
 Running time: `O(tree height)`.
 
 ## Complete binary tree
+
+Most of operations are `O(tree height)` so our goal is to keep the tree shallow.
+
+A binary tree is **complete** if all its levels are filled except possibly the last one which is filled from left to right.
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt1.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt2.PNG" />
+
+First advantage, low height:
+
+A complete binary tree with n nodes has height at most `O(log n)`.
 
 ```c#
 
