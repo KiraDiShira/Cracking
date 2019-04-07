@@ -144,9 +144,42 @@ A binary tree is **complete** if all its levels are filled except possibly the l
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt2.PNG" />
 
-First advantage, low height:
+**First advantage, low height**:
 
 A complete binary tree with n nodes has height at most `O(log n)`.
+
+Proof:
+
+- Complete the last level to get a full binary tree on `n' >= n` nodes and the same number of levels `l`
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt3.PNG" />
+
+- Note that `n' <= 2n`
+- Then n' = 2^l - 1 and hence: `l = log_2 (n' + 1) <= log_2 (2n + 1) = O(log(n))`
+
+**Second advantage, store as array**:
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt4.PNG" />
+
+What do we pay for these advantages?
+
+We need to keep the tree complete.
+
+Which binary heap operations modify the shape of the tree?
+
+Only `Insert` and `ExtractMax` (`Remove` changes the shape by calling `ExtractMax`).
+
+To keep the tree complete while insert and element, insert it as a leaf in the leftmost vacant position in the last level and let it sift up.
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt5.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt6.PNG" />
+
+To extract the maximum value, replace the root by the last leaf and let it  sift down
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt7.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/cbt8.PNG" />
 
 ```c#
 
