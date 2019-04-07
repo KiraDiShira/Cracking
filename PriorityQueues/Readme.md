@@ -8,6 +8,7 @@
 * [Basic operations](#basic-operations)
 * [Complete binary tree](#complete-binary-tree)
 * [Code](#code)
+* [Heap sort](#heap-sort)
 * [Summary](#summary)
   
 ## Definition
@@ -325,6 +326,26 @@ namespace BinaryHeapImplementation
 }
 
 ```
+
+## Heap sort
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs1.PNG" />
+
+The resulting algorithm is comparison-based and has running time `O(n * log(n))`, hence asymptotically optimal.
+
+Not in place: uses additional space to store the priority queue.
+
+We can implemet an in place Heap Sort algorithm. For this, we will first turn a given array into a heap by permuting its elements.
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs2.PNG" />
+
+Nel ciclo for si parte dal floor di n/2 perchè non si stanno considerando le foglie dell'heap per cui sicuramente la proprietà di un max binary heap è soddisfatta (le foglie non hanno figli, e quindi non possono avere figli il cui valore sia maggiore del proprio)
+
+The running time is `O(n log(n))`.
+
+
+
+
 ## Summary
 
 So, once again, let me state some properties of the resulting algorithm which is called Heap Sort. It is in place. it doesn't need any additional memory. Everything is happening inside the given array A. So this is in advantage of this algorithm. Another advantage is that its running time is n log n. It is as simple, as it is optimal. So, this makes it a good alternative to the quick sort algorithm. So, in practice presort is usually faster, it is still faster. However, the heap sort algorithm has worst case running time n log n. While the quick sort algorithm has average case running time n log n. For this reason, a popular approach and practice is the following. It is called **IntraSort algorithm**. You first run quick sort algorithm. If it turns out the be slow, I mean, if the recursion deep, exceeds c log n for some constant, c, then you stop the current call to quick sort algorithm and switch to heap sort algorithm, which is guaranteed to have running time n log n. So, in this case, in this implementation, your algorithm usually, in most cases it works like quick sort algorithm. And even in these unfortunate cases where it works in larger, where quick sort has running time larger than n log n, you stop it in the right point of time and switch to HeapSort. So, this gives an algorithm which in many cases behaves like quick sort algorithm, and it has worst case running time. 
