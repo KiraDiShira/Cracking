@@ -103,6 +103,25 @@ While sift up the heap property is violated on at most one edge of our binary tr
 
 This in particular implies that the number of swaps required is at most the height of this tree. Which in turn means that the running time of insertion procedure, as well as the running time of the sifting up procedure, is `O(tree height)`.
 
+### Extract Max
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax1.PNG" />
+
+- replace the root with any leaf
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax2.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax3.PNG" />
+
+
+- this may violate the heap property, as in this case (on two edges).
+- to fix it, we let the problematic node **sift down**: we swap the problematic node with larger child until the heap property is satisfied.
+- we swap with the larger child which automatically fixes one of the two bad edges
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/extrMax4.PNG" />
+
+the total running time of the extract max as well as the sift down procedures is `O(tree height)`.
+
 ```c#
 
 using System;
