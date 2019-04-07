@@ -9,5 +9,6 @@
 - [Queue](https://github.com/KiraDiShira/Cracking/blob/master/Queues/Readme.md#queues)
 - [Tree](https://github.com/KiraDiShira/Cracking/blob/master/Tree/Readme.md#tree)
 - [Dynamic arrays and amortized analysis](https://github.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Readme.md#dynamic-arrays-and-amortized-analysis)
+- [Priority queues](https://github.com/KiraDiShira/Cracking/blob/master/PriorityQueues/Readme.md#priority-queues)
 
 https://github.com/yakivmospan/github-wikito-converter
