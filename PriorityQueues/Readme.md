@@ -186,14 +186,14 @@ To extract the maximum value, replace the root by the last leaf and let it  sift
 using System;
 using System.Linq;
 
-namespace HeapCoursera
+namespace BinaryHeapImplementation
 {
     public class Heap
     {
         private readonly int[] _array;
 
         public int Size { get; set; }
-        public int Length => _array.Length;
+        public int MaxSize => _array.Length;
 
         public int this[int index]
         {
@@ -201,10 +201,10 @@ namespace HeapCoursera
             set => _array[index] = value;
         }
 
-        public Heap(int[] array)
+        public Heap(int[] array, int size)
         {
             _array = array;
-            Size = array.Length;
+            Size = size;
         }
 
         private static int Right(int index)
@@ -238,7 +238,7 @@ namespace HeapCoursera
             }
             if (largest != index)
             {
-                Exchange(index, largest);
+                Swap(index, largest);
                 SiftDown(largest);
             }
         }
@@ -247,21 +247,21 @@ namespace HeapCoursera
         {
             while (index > 0 && _array[Parent(index)] < _array[index])
             {
-                Exchange(index, Parent(index));
+                Swap(index, Parent(index));
                 index = Parent(index);
             }
         }
 
         public void Insert(int key)
         {
-            if (Size == Length)
+            if (Size == MaxSize)
             {
                 throw new Exception("error");
             }
 
-            Size++;
             _array[Size] = key;
             SiftUp(Size);
+            Size++;
         }
 
         public int ExtractMax()
@@ -307,16 +307,16 @@ namespace HeapCoursera
             }
         }
 
-        private  void Exchange(int index, int largest)
+        private void Swap(int index1, int index2)
         {
-            int heapIndex = _array[index];
-            _array[index] = _array[largest];
-            _array[largest] = heapIndex;
+            int index1value = _array[index1];
+            _array[index1] = _array[index2];
+            _array[index2] = index1value;
         }
 
         public override string ToString()
         {
-            return $"{nameof(_array)}: {String.Join(",", _array.Take(Size - 1))}";
+            return $"{nameof(_array)}: {String.Join(",", _array.Take(Size))}";
         }
     }
 }
