@@ -5,6 +5,8 @@
 * [Definition](#definition)
 * [Naive implementation](#naive-implementation)
 * [Priority queue: heaps](#priority-queue-heaps)
+* [Basic operations](#basic-operations)
+* [Complete binary tree](#complete-binary-tree)
 * [Summary](#summary)
   
 ## Definition
@@ -132,6 +134,8 @@ Running time: `O(tree height)`.
 Change the priority of the element to `+Inf`, let it sift up, and then extract maximum.
 
 Running time: `O(tree height)`.
+
+## Complete binary tree
 
 ```c#
 
