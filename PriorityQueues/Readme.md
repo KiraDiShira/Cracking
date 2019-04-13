@@ -10,6 +10,7 @@
 * [Code](#code)
 * [Heap sort](#heap-sort)
 * [Summary](#summary)
+* [Building a heap](#building-a-heap)
   
 ## Definition
 
@@ -354,3 +355,20 @@ Heap Sort:
 - running time is `O(n log(n))`. It is asymptotically optimal. So, this makes it a good alternative to the quick sort algorithm. 
 
 So, in practice quicksort is usually faster, it is still faster. However, the heap sort algorithm has worst case running time n log n. While the quick sort algorithm has average case running time n log n. For this reason, a popular approach and practice is the following. It is called **IntraSort algorithm**. You first run quick sort algorithm. If it turns out the be slow, I mean, if the recursion deep, exceeds c log n for some constant, c, then you stop the current call to quick sort algorithm and switch to heap sort algorithm, which is guaranteed to have running time n log n. So, in this case, in this implementation, your algorithm usually, in most cases it works like quick sort algorithm. And even in these unfortunate cases where it works in larger, where quick sort has running time larger than n log n, you stop it in the right point of time and switch to HeapSort. So, this gives an algorithm which in many cases behaves like quick sort algorithm, and it has worst case running time `O(n log(n))`.
+
+## Building a heap
+
+The running time of BuildHeap is `O(n log(n))` since we call SiftDown `O(n)` nodes.
+
+Note:
+- if a node is already close to the leaves, the sifting it down is fast.
+- we have many suche nodes.
+
+Was our estimate of the running time of BuildHeap too pessimistic?
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs4.PNG" />
+
+l'ultimo <= è dovuto al fatto che la sommatoria procede sino all'infinito e non si farma a log n. Il 2 invece:
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs5.PNG" />
+
