@@ -11,6 +11,7 @@
 * [Heap sort](#heap-sort)
 * [Summary](#summary)
 * [Building a heap](#building-a-heap)
+* [Partial sorting](#partial-sorting)
   
 ## Definition
 
@@ -372,3 +373,14 @@ l'ultimo <= è dovuto al fatto che la sommatoria procede sino all'infinito e non
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs5.PNG" />
 
+Our new estimate for the running time of the BuildHeap procedure does not actually improve the running time of the HeapSort algorithm. Because the HeapSort algorithm first builds a heap, and now we know that it can be done in linear time, but then we need to extract max n minus 1 times.
+
+So we still have n log n time, and actually we cannot do better than n log n asymptotically. We already know this, because it is a comparison-based algorithm. 
+
+However, this helps to solve a different problem faster than naively:
+
+## Partial sorting
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs6.PNG" />
+
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs7.PNG" />
