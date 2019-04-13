@@ -11,4 +11,5 @@
 - [Dynamic arrays and amortized analysis](https://github.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Readme.md#dynamic-arrays-and-amortized-analysis)
 - [Priority queues](https://github.com/KiraDiShira/Cracking/blob/master/PriorityQueues/Readme.md#priority-queues)
 
-https://github.com/yakivmospan/github-wikito-converter
+- stampare prio que
+- aggiornare useful math con serie ultima slide prio que
