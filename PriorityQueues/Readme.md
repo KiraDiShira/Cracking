@@ -343,7 +343,7 @@ Nel ciclo for si parte dal floor di n/2 perchè non si stanno considerando le fo
 
 The running time is `O(n log(n))`.
 
-
+<img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/PriorityQueues/Images/hs3.PNG" />
 
 
 ## Summary
