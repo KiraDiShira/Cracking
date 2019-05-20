@@ -24,11 +24,11 @@ A **disjoint-set** data structure supports the following operations:
 * Use the smallest element of a set as its ID
 * Use array smallest[1 . . . n]: smallest[i] stores the smallest element in the set i belongs to
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds1.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds2.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds2.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds3.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds3.PNG" />
 
 ```c#
 
@@ -77,9 +77,9 @@ What basic data structure allows for efficient merging? Linked list!
 
 Idea: represent a set as a linked list, use the list tail as ID of the set
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds4.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds4.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds5.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds5.PNG" />
 
 - Pros:
     * Running time of Union is O(1)
@@ -90,7 +90,7 @@ Idea: represent a set as a linked list, use the list tail as ID of the set
     
 Can we merge in a different way?
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds6.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds6.PNG" />
 
 ## Trees
 
@@ -98,9 +98,9 @@ Can we merge in a different way?
 - ID of a set is the root of the tree
 - Use array parent[1 . . . n]: parent[i] is the parent of i, or i if it is the root
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds7.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds7.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds8.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds8.PNG" />
 
 How to merge two trees?
 
@@ -110,7 +110,7 @@ Which one to hang?
 
 A shorter one, since we would like to keep the trees shallow
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds9.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds9.PNG" />
 
 ## Union by Rank
 
@@ -118,20 +118,20 @@ A shorter one, since we would like to keep the trees shallow
 * To quickly find a height of a tree, we will keep the height of each subtree in an array rank[1 . . . n]: rank[i] is the height of the subtree whose root is `i`
 * Hanging a shorter tree under a taller one is called a union by rank heuristic
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds10.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds10.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds11.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds11.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds12.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds12.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds13.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds13.PNG" />
 
 Union(5, 2)
 Union(3, 1)
 Union(2, 3)
 Union(2, 6)
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds14.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds14.PNG" />
 
 **Lemma**
 
@@ -168,13 +168,13 @@ Next part We’ll discover another heuristic that improves the running time to n
 
 ## Path Compression
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds15.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds15.PNG" />
 
 not only it finds the root for 6, it does so for all the nodes on this path. Let’s not lose this useful info.
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds16.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds16.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds17.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds17.PNG" />
 
 ```c#
 public class TreeDisjointSet
@@ -246,7 +246,7 @@ public class TreeDisjointSet
 }
 ```
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds18.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds18.PNG" />
 
 Esempio:
 
@@ -260,11 +260,11 @@ log2 2 = 1 <= 1? si, mi fermo
 quante volte ho chiamato la funzione log2 x? 3 quindi il log* 16 = 3
 ```
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds19.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds19.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds20.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds20.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ds21.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ds21.PNG" />
 
 ## Analysis
 
@@ -276,7 +276,7 @@ Before going into details of the proof, let's realize some properties:
 
 In questo esempio, il rank è 2 e l'altezza passa da 2 a 1:
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ana0.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ana0.PNG" />
 
 `Proprietà: ogni albero con root di rank k ha almeno 2^k nodi`
 
@@ -286,7 +286,7 @@ Problema: Quanti sono i nodi rank k?
 
 Dimostrazione: ogni albero con root di rank k ha almeno 2^k nodi, quindi:
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ana1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ana1.PNG" />
 
 - y = nodi di rank k
 - epsilon = numero di nodi in più in un albero
@@ -319,7 +319,7 @@ So for this reason when estimating the total running time we will just assume th
 
 Each Find operation traverses some path from a node to find the root of the corresponding tree. So we traverse some number of edges. So the total run in time of all the defind operations, of all the calls to the Find operation is just the total number of edges traversed. 
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/ana2.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/ana2.PNG" />
 
 * Per `m` si intende il numero di chiamate alla `Find` (numero totale di operazioni).
 * Per `n` si intende il numero di `makeSet`
@@ -334,7 +334,7 @@ In questo esempio, `log* (n) = log* (29) = 4`, quindi ci sono al massimo 4 valor
 
 Per il terzo membro:
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/DisjointSet/Images/terz.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/DisjointSet/Images/terz.PNG" />
 
 1) l'abbiamo dimostrato prima
 2) Quando si va verso l'alto il rank aumenta sempre (proprietà precedente)
