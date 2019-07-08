@@ -28,6 +28,8 @@ Only caring about what happens in this sort of long scale behavior, we will be a
 
 <img src="https://raw.githubusercontent.com/KiraDiShira/Cracking/master/BigONotation/Images/BigO1.PNG" />
 
+<img src="https://firebasestorage.googleapis.com/v0/b/galappeo-db7de.appspot.com/o/image1.PNG?alt=media&token=6fc3668c-79ee-4ebc-8b3f-2a2eda849df4" />
+
 <div style="page-break-before: always !important;"/>
 
 ## Big-O
