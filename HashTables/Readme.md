@@ -15,5 +15,5 @@ When h(o1) == h(o2) and o1 != o2, there is a *collision*.
 **Map** from S to V is a data structure with methods HasKey(O), Get(O), Set(O,v), where O 
 
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h1.png" />
 
