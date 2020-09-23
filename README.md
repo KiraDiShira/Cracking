@@ -11,7 +11,7 @@
 - [Dynamic arrays and amortized analysis](https://github.com/KiraDiShira/Cracking/blob/master/DynamicArraysandAmortizedAnalysis/Readme.md#dynamic-arrays-and-amortized-analysis)
 - [Priority queues](https://github.com/KiraDiShira/Cracking/blob/master/PriorityQueues/Readme.md#priority-queues)
 - [Disjoint Set](https://github.com/KiraDiShira/Cracking/tree/master/DisjointSet#disjoint-sets)
-- [Hash Table](https://github.com/KiraDiShira/Cracking/tree/master/HashTables#hash-tables)
+- [Hash Tables](https://github.com/KiraDiShira/Cracking/tree/master/HashTables#hash-tables)
 
 
 
