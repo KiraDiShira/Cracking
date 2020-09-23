@@ -10,4 +10,5 @@
 
 *m* is called the **cardinality** of hash function *h*.
 
+When h(o1) == h(o2) and o1 != o2, there is a *collision*.
 
