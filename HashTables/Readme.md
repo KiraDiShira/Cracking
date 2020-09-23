@@ -2,7 +2,7 @@
 
 # Hash Tables
 
-* [Introduction, Direct Addressing and Chaining](#Introduction,-Direct-Addressing-and-Chaining)
+* [Introduction, Direct Addressing and Chaining](#introduction-direct-addressing-and-chaining)
 
 ## Introduction, Direct Addressing and Chaining
 
