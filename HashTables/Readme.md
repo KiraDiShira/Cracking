@@ -17,3 +17,25 @@ When h(o1) == h(o2) and o1 != o2, there is a *collision*.
 We want to implement a map, using hash function. So what we'll do is called **chaining**. We will create an array of size *m*, where *m* is the cardinality of the hash function, and in this case, let *m* be 8. This will be an array of lists of pairs. And each pair will consist of an object *O*, and a value V, corresponding to this object.
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h2.png" />
+
+How to implement this in code?
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h3.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h4.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h5.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h6.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h7.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h8.png" />
+
+
+
+What is a *hash table*? A hash table is any implementation of a set or a map which is using hashing, hash functions. It can even not use chaining. There are different ways to use hash functions to store a set or a map in memory. But chaining is one of the most frequently used methods to implement a hash table.
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h9.png" />
+
+So we want both *m* and *c* being relatively small . How can we do that? Well, we can do that based on a clever selection of a hash function. 
