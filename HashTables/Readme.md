@@ -6,9 +6,13 @@
 
 ## Introduction, Direct Addressing and Chaining
 
-`For any set of objects S and any integer m > 0, a function h : S -> {0, 1, …, m – 1 } is called a hash function.`
+For any set of objects *S* and any integer *m > 0*, a function *h : S -> {0, 1, …, m – 1 }* is called a **hash function**.`
 
 *m* is called the **cardinality** of hash function *h*.
 
 When h(o1) == h(o2) and o1 != o2, there is a *collision*.
+
+**Map** from S to V is a data structure with methods HasKey(O), Get(O), Set(O,v), where O 
+
+e^{i %2B\pi} =x%2B1
 
