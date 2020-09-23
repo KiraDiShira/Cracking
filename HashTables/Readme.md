@@ -22,9 +22,61 @@ How to implement this in code?
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h3.png" />
 
+```c#
+public bool HasKey(int number)
+{
+    long arrayIndex = Hashing(number);
+    IList<Contact> collisions = _table[arrayIndex];
+    foreach (var collision in collisions)
+    {
+        if (collision.Number == number)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h4.png" />
 
+```c#
+public string Get(int number)
+{
+    long arrayIndex = Hashing(number);
+    IList<Contact> collisions = _table[arrayIndex];
+    foreach (Contact collision in collisions)
+    {
+        if (collision.Number == number)
+        {
+            return collision.Name;
+        }
+    }
+    return "not found";
+}
+
+```
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h5.png" />
+
+```c#
+public void Set(int number, string name)
+{
+    long arrayIndex = Hashing(number);
+    IList<Contact> contacts = _table[arrayIndex];
+    foreach (Contact contact in contacts)
+    {
+        if (contact.Number == number)
+        {
+            contact.Name = name;
+            return;
+        }
+    }
+    _table[arrayIndex]
+        .Add(new Contact(name, number));    
+}
+```
+Now let's look at asymptotics of chaining schema:
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h6.png" />
 
