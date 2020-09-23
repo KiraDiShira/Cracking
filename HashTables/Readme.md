@@ -82,9 +82,9 @@ Now let's look at asymptotics of chaining schema:
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h7.png" />
 
+ We've introduced the notion of map, and now we'll introduce a very similar and natural notion of a **set**. 
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h8.png" />
-
-
 
 What is a *hash table*? A hash table is any implementation of a set or a map which is using hashing, hash functions. It can even not use chaining. There are different ways to use hash functions to store a set or a map in memory. But chaining is one of the most frequently used methods to implement a hash table.
 
