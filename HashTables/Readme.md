@@ -436,6 +436,8 @@ private static long LongRandom(long min, long max, Random rand)
 
 ### Hashing Strings
 
+L'idea è quella di trasformare con una funzione di hash una stringa in un numero. Trasformazione a bassa probabilità di collisione. E usare tale numero come input per la funzione di hash numerica. In tal modo posso costruire una hash table che abbia come chiavi delle stringhe.
+
 **Definition** Denote by **|S|** the length of string S.
 
 Examples:
