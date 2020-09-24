@@ -238,3 +238,200 @@ In the general case:
 ### da inserirre https://www.cs.cornell.edu/courses/cs312/2008sp/lectures/lec20.html
 
 Resizable hash tables and amortized analysis
+
+### Hashing integers code
+
+```c#
+
+public class NumbersHashTable
+{
+    public List<PhoneContact>[] _array;
+    public decimal _numberOfKeys;
+    public decimal _numberOfRehash; // per fini di debug
+    private NumbersHashFunction _hashFunction;
+    private decimal _maxLoadFactor = 3m;
+
+    public NumbersHashTable(long size = 1, long maxDomainSize = 10000019)
+    {
+        _array = new List<PhoneContact>[size];
+        for(int i = 0; i< _array.Length; i++)
+        {
+            _array[i] = new List<PhoneContact>();
+        }
+        _hashFunction = new NumbersHashFunction(size, maxDomainSize);
+    }
+
+    public decimal LoadFactor
+    {
+        get
+        {
+            return _numberOfKeys / _array.LongLength;
+        }
+    }
+
+    public bool HasKey(long key)
+    {
+        List<PhoneContact> phoneContacts = _array[_hashFunction.Hash(key)];
+
+        foreach (PhoneContact phoneContact in phoneContacts)
+        {
+            if(key == phoneContact.Number)
+            {
+                return true;
+            }             
+        }
+        return false;
+    }
+
+    public PhoneContact Get(long key)
+    {
+        List<PhoneContact> phoneContacts = _array[_hashFunction.Hash(key)];
+
+        foreach (PhoneContact phoneContact in phoneContacts)
+        {
+            if (key == phoneContact.Number)
+            {
+                return phoneContact;
+            }
+        }
+
+        throw new Exception($"The given key '{key}' was not present in the dictionary.");
+    }
+
+    public void Set(long key, PhoneContact newContact)
+    {
+        List<PhoneContact> phoneContacts = _array[_hashFunction.Hash(key)];
+
+        for (int i = 0; i < phoneContacts.Count; i++)
+        {
+            PhoneContact phoneContact = phoneContacts[i];
+            if (key == phoneContact.Number)
+            {
+                phoneContact = newContact;
+                return;
+            }
+        }
+
+        phoneContacts.Add(newContact);
+        _numberOfKeys++;
+
+        if (LoadFactor > _maxLoadFactor)
+        {
+            _numberOfRehash++;
+            Rehash();
+        }
+    }    
+
+    private void Rehash()
+    {
+        long newSize = _array.LongLength * 2;
+        var tNew = new NumbersHashTable(size: newSize);
+
+        foreach (List<PhoneContact> contacts in _array)
+        {
+            foreach (PhoneContact contact in contacts)
+            {
+                tNew.Set(contact.Number, contact);
+            }
+        }
+
+        _hashFunction = tNew._hashFunction;
+        _array = tNew._array;
+    }
+}
+
+public class NumbersHashFunction
+{
+    public long PrimeNumber { get; private set; }
+    public long A { get; private set; }
+    public long B { get; private set; }
+    public long HashTableSize { get; private set; }
+
+    public NumbersHashFunction(long size, long maxDomainSize)
+    {
+        PrimeNumber = GetPrimeNumberGreaterThen(maxDomainSize);
+        Random rand = new Random();
+        A = LongRandom(1, PrimeNumber - 1, rand);
+        B = LongRandom(0, PrimeNumber - 1, rand);
+        HashTableSize = size;
+    }
+
+    public long Hash(long key)
+    {
+        return ((A * key + B) % PrimeNumber) % HashTableSize;
+    }
+
+    private static long GetPrimeNumberGreaterThen(long maxDomainSize)
+    {
+        //todo calculate prime number greater then max domain size
+        return maxDomainSize;
+    }
+
+    private static long LongRandom(long min, long max, Random rand)
+    {
+        max += 1;
+        byte[] buf = new byte[8];
+        rand.NextBytes(buf);
+        long longRand = BitConverter.ToInt64(buf, 0);
+        return (Math.Abs(longRand % (max - min)) + min);
+    }
+}
+
+static void Main(string[] args)
+{
+    var hashTable = new NumbersHashTable();
+
+    Random rnd = new Random();
+    for (int i = 0; i < 1700000; i++)
+    {
+        var longRandom = LongRandom(1, 10000000, rnd);
+        hashTable.Set(longRandom, new PhoneContact(longRandom.ToString(), longRandom));
+    }
+
+    Console.WriteLine($"number of rehash: {hashTable._numberOfRehash}");
+    Console.WriteLine($"number of keys: {hashTable._numberOfKeys}");
+    Console.WriteLine($"m or size: {hashTable._array.Length}");
+    Console.WriteLine($"Load factor: {hashTable.LoadFactor}");
+
+    IDictionary<int, int> sizeCount = new Dictionary<int, int>();
+    foreach (List<PhoneContact> bucket in hashTable._array)
+    {
+        var bucketCount = bucket.Count;
+        if (sizeCount.ContainsKey(bucketCount))
+        {
+            sizeCount[bucketCount]++;
+        }
+        else
+        {
+            sizeCount.Add(bucketCount, 1);
+        }
+    }
+
+    decimal totSum = 0m;
+    foreach (var item in sizeCount.OrderBy(x => x.Key))
+    {
+        Console.WriteLine($"bucket Length: {item.Key} Count: {item.Value}");
+        totSum +=  item.Key * item.Value;
+    }
+
+    Console.WriteLine($"averagee length: {totSum / sizeCount.Where(x => x.Key != 0).Select(x => x.Value).Sum()} expected lenth: {1 + hashTable.LoadFactor}");
+    
+
+    Console.WriteLine();
+    Console.Read();
+}
+
+
+private static long LongRandom(long min, long max, Random rand)
+{
+    max += 1;
+    byte[] buf = new byte[8];
+    rand.NextBytes(buf);
+    long longRand = BitConverter.ToInt64(buf, 0);
+    return (Math.Abs(longRand % (max - min)) + min);
+}
+
+
+```
+
+### Hashing Strings
