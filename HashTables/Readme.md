@@ -106,3 +106,37 @@ We need two Maps: (phone number → name) and (name → phone number)
 
 Implement these Maps as hash tables. First, we will focus on the Map from phone numbers to names.
 
+**A good schema is chaining.**
+
+Il numero di telefono lo trasformiamo con una hash function e otteniamo un numero (da 2232323 a 1) e cosi via...
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h10.png" />
+
+Parameters:
+
+- **n**: phone numbers stored
+- **m**: cardinality of the hash function
+- **c**: length of the longest chain
+- **O(n + m)** memory is used
+- **𝛼 = n/m**: is called **load factor**
+- Operations run in time O(c + 1)
+- You want small m and c!
+
+Good example:
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h11.png" />
+
+Bad example:
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h12.png" />
+
+Good hash functions are:
+
+- Deterministic
+- Fast to compute
+- Distributes keys well into different cells
+- Few collisions
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h13.png" />
+
+So for any deterministic hash function, there is a bad input on which it will have a lot of collisions. How we can solve this problem?
