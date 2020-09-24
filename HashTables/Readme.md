@@ -435,3 +435,204 @@ private static long LongRandom(long min, long max, Random rand)
 ```
 
 ### Hashing Strings
+
+**Definition** Denote by **|S|** the length of string S.
+
+Examples:
+- |“a”| = 1
+- |“ab”| = 2
+- |“abcde”| = 5
+
+**Preparation** 
+- Convert each character S[i] to integer code (ASCII code, Unicode, etc.)
+- Choose big prime number p
+
+We introduce a new family of hash functions called **polynomial hash functions**:
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h34.PNG" />
+
+How many hash functions are there in this family? Well of course, there are exactly p- 1 different hash functions, because to choose to define a hash function from this family you would just need to choose the value of x. And x changes from 1 to p- 1, and it's an integer number of course. 
+
+So how can we implement a hash function from this family? 
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h35.PNG" />
+
+```c#
+private long PolyHash(string s)
+{
+    long hash = 0;
+    for (int i = s.Length - 1; i >= 0; --i)
+        hash = (hash * multiplier + s[i]) % _p;
+    return hash;
+}
+```
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h36.PNG" />
+
+**Java implementation**
+
+The method hashCode of the built-in Java class String is very similar to our PolyHash, it just uses x = 31 and for technical reasons avoids the (mod p) operator. 
+
+You now know how a function that is used trillions of times a day in many thousands of programs is implemented!
+
+**Efficency of polynomial family?**
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h37.PNG" />
+
+### Cardinality fix
+
+Now we know of polynomial hash family or hashing strings. But there's a problem with that family. All the hash functions in that family have a cardinality of P, where P is a very big prime number. And what we want is the cardinality of hash functions to be the same as the size of our hash table. So, once a small cardinality. So, we won't be able to use this polynomial hashing family directly in our hash tables. We want to somehow fix the cardinality of the functions in the polynomial family. 
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h38.PNG" />
+
+```c#
+private int HashFunc(string s)
+{
+    var hash = PolyHash(s);
+    return (int)hash % _tableSize;
+}
+```
+
+Note that it is very important that we first select both random function from the polynomial family and the random function from the universal family of our integers. And we fix them, and we use the same pair of functions for the whole algorithm. And then, the whole function from string to integer number from between zero and minus one is a deterministic hash function. 
+
+And it can be shown that the family of functions define this way is a very good family. It is not a universal family, but it is a very good family with low probability of collisions.
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h39.PNG" />
+
+So, that is not an universal family because for a universal family there shouldn't be any sum on L over p the probability of collision should be at most 1 over M. But we can be very, very close to universal family because we can control P. We can make P very big. And then L over p will be very small. And so, the probability of collision will be at most will 1 over m plus some very small number.
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h40.PNG" />
+
+So that way, we proved that combination of polynomial hashing with universal hashing for integers, is a really good family of hash functions. Now what if we take this new family of hash functions and apply it to build a hash table? 
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h41.PNG" />
+
+### Hashing strings code
+
+```c#
+
+public class StringsHashFunction
+{
+    private readonly NumbersHashFunction _numbersHashFunction;
+
+    public long PrimeNumber { get; private set; }
+    public long X { get; private set; }
+
+    public StringsHashFunction(NumbersHashFunction numbersHashFunction, LongRandomCalculator longRandomCalculator)
+    {
+        PrimeNumber = 1610612741;
+        Random rand = new Random();
+        X = longRandomCalculator.LongRandom(1, PrimeNumber - 1, rand);
+        _numbersHashFunction = numbersHashFunction;
+    }
+
+    public long Hash(string key)
+    {
+        long stringHash = 0;
+        for (int i = key.Length - 1; i >= 0; --i)
+            stringHash = (stringHash * X + key[i]) % PrimeNumber;
+
+        long numberHash = _numbersHashFunction.Hash(stringHash);
+
+        return numberHash;
+    }
+}
+
+public class StringsHashTable
+{
+    public List<PhoneContact>[] _array;
+    public decimal _numberOfKeys;
+    public decimal _numberOfRehash; // per fini di debug
+    private StringsHashFunction _hashFunction;
+    private decimal _maxLoadFactor = 3m;
+
+    public StringsHashTable(long size = 1, long maxDomainSize = 10000019)
+    {
+        _array = new List<PhoneContact>[size];
+        for (int i = 0; i < _array.Length; i++)
+        {
+            _array[i] = new List<PhoneContact>();
+        }
+        _hashFunction = new StringsHashFunction(new NumbersHashFunction(new LongRandomCalculator(), size, maxDomainSize), new LongRandomCalculator());
+    }
+
+    public decimal LoadFactor
+    {
+        get
+        {
+            return _numberOfKeys / _array.LongLength;
+        }
+    }
+
+    public bool HasKey(string key)
+    {
+        List<PhoneContact> phoneContacts = _array[_hashFunction.Hash(key)];
+
+        foreach (PhoneContact phoneContact in phoneContacts)
+        {
+            if (key == phoneContact.Name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public PhoneContact Get(string key)
+    {
+        List<PhoneContact> phoneContacts = _array[_hashFunction.Hash(key)];
+
+        foreach (PhoneContact phoneContact in phoneContacts)
+        {
+            if (key == phoneContact.Name)
+            {
+                return phoneContact;
+            }
+        }
+
+        throw new Exception($"The given key '{key}' was not present in the dictionary.");
+    }
+
+    public void Set(string key, PhoneContact newContact)
+    {
+        List<PhoneContact> phoneContacts = _array[_hashFunction.Hash(key)];
+
+        for (int i = 0; i < phoneContacts.Count; i++)
+        {
+            PhoneContact phoneContact = phoneContacts[i];
+            if (key == phoneContact.Name)
+            {
+                phoneContact = newContact;
+                return;
+            }
+        }
+
+        phoneContacts.Add(newContact);
+        _numberOfKeys++;
+
+        if (LoadFactor > _maxLoadFactor)
+        {
+            _numberOfRehash++;
+            Rehash();
+        }
+    }
+
+    private void Rehash()
+    {
+        long newSize = _array.LongLength * 2;
+        var tNew = new StringsHashTable(size: newSize);
+
+        foreach (List<PhoneContact> contacts in _array)
+        {
+            foreach (PhoneContact contact in contacts)
+            {
+                tNew.Set(contact.Name, contact);
+            }
+        }
+
+        _hashFunction = tNew._hashFunction;
+        _array = tNew._array;
+    }
+}
+
+```
+
