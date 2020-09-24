@@ -3,6 +3,7 @@
 # Hash Tables
 
 * [Introduction, Direct Addressing and Chaining](#introduction-direct-addressing-and-chaining)
+- [Hash functions](#hash-functions)
 
 ## Introduction, Direct Addressing and Chaining
 
@@ -91,3 +92,17 @@ What is a *hash table*? A hash table is any implementation of a set or a map whi
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h9.png" />
 
 So we want both *m* and *c* being relatively small . How can we do that? Well, we can do that based on a clever selection of a hash function. 
+
+## Hash functions
+
+You want to design a data structure to store your contacts: names of people along with their phone numbers. The data structure should
+be able to do the following quickly:
+
+- Add and delete contacts,
+- Lookup the phone number by name,
+- Determine who is calling given their phone number.
+
+We need two Maps: (phone number → name) and (name → phone number)
+
+Implement these Maps as hash tables. First, we will focus on the Map from phone numbers to names.
+
