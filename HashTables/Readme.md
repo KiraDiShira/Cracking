@@ -199,3 +199,42 @@ So to achieve that, you need to call this procedure rehash after each operation 
 
 `Similarly to dynamic arrays, single rehashing takes O(n) time, but amortized running time of each operation with hash table is still O(1) on average, because rehashing will be rare.`
 
+### Hashing integers
+
+You will start with a universal family for the most important object which is integer number. Because any object on your computer is represented as a series of bits or bytes, and so you can think of it as a sequence of integer numbers. And so first, we need to learn to hash integers efficiently. 
+
+Example with a phone number:
+
+- Take phone numbers up to length 7, for example 148-25-67
+- Convert phone numbers to integers from 0 to 10^7 − 1 = 9 999 999: 148-25-67 → 1 482 567
+- Choose prime number bigger than 10^7, e.g. p = 10 000 019
+- Choose hash table size, e.g. m = 1 000
+
+So now that we selected p and m, we are ready to define universal family for integers between 0 and 10^7 - 1. So the Lemma says that the following family of hash functions is a universal family. 
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h20.png" />
+
+```
+p = prime number
+a,b = those parameters are different for different hash functions in these family
+```
+
+```c#
+private long Hashing(long number)
+{
+    return ((_a * number + _b) % _p) % _tableSize;
+}
+```
+And the size of this hash family, what do you think it is? 
+
+Well, it is equal to `p (p - 1)`, why is that? Because there are p minus 1 variance for a, and independently from that, there are p variance for b.
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h21.png" />
+
+In the general case:
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h22.png" />
+
+### da inserirre https://www.cs.cornell.edu/courses/cs312/2008sp/lectures/lec20.html
+
+Resizable hash tables and amortized analysis
