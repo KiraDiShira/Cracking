@@ -645,3 +645,95 @@ Examples: Your name on a website, Twitter messages about your company.
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h33.png" />
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h34.png" />
+### Rabin-Karp's Algorithm
+
+Need to compare P with all substrings S of T of length |P|. Idea: use hashing to quickly compare P with substrings of T.
+
+- If h(P) != h(S), then definitely P != S
+- If h(P) = h(S), call AreEqual(P, S)
+- Use polynomial hash family 𝒫p with prime p
+- If P != S, the probability Pr[h(P) = h(S)] is at most |P|/p for polynomial hashing
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h48.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h49.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h50.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h51.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h52.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h53.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h54.png" />
+
+(Non è usato il modulo per semplicità)
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h55.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h56.png" />
+
+Here's the function to pre compute all the hash values of our polynomial hash function on the substrings of the text t with the length equal to the length of the pattern, and with prime number, P and selected integer x. We initialize our answer, big H, as an array of length, length of text minus length of pattern plus one. Which is the number of substrings of the text with length equal to the length of the pattern. Also initialize S by the last substring of the text with a length equal to the length of the pattern. And you compute the hash value for this last substring directly by calling our implementation of polynomial hash with the substring prime number P and integer x. Then we also need to precompute the value of x to the power of length of the pattern and store it in the variable y. To do that we need initialize it with 1 and then multiply it length of P times by x and take this module of p. And then the main for loop, the second for loop goes from right to left and computes the hash values for all the substrings of the text, but for the last one for which we already know the answer. So to compute H[i] given H[i + 1], we multiply it by x. Then we add T[i] and we subtract y, which is x to the power of length of P, by T[i + length of the pattern]. And we take the expression module of p. 
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h57.png" />
+
+<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h58.png" />
+
+```c#
+public class RabinKarpAlgorithm
+{
+    private int prime = 1610612741;
+    private int multiplier = 31;
+
+    private int PolyHash(string pattern)
+    {
+        long hash = 0;
+        for (int i = pattern.Length - 1; i >= 0; --i)
+            hash = (hash * multiplier + pattern[i]) % prime;
+        return (int)hash;
+    }
+
+    private int[] PrecomputeHashes(string text, int patternLength)
+    {
+        int[] precomputedHashes = new int[text.Length - patternLength + 1];
+        string S = text.Substring(text.Length - patternLength, patternLength );
+        precomputedHashes[text.Length - patternLength] = PolyHash(S);
+        int y = 1;
+        for (int i = 1; i <= patternLength; i++)
+        {
+            y = (y * multiplier) % prime;
+        }
+
+        for (int i = text.Length - patternLength - 1; i >= 0; i--)
+        {
+            precomputedHashes[i] = (multiplier * precomputedHashes[i + 1] + text[i] -
+                                    y * text[i + patternLength]) % prime;
+        }
+
+        return precomputedHashes;
+    }
+
+    public IList<int> RabinKarp(string text, string pattern)
+    {
+        IList<int> results = new List<int>();
+        int patternHash = PolyHash(pattern);
+        int[] precomputedHashes = PrecomputeHashes(text, pattern.Length);
+
+        for (int i = 0; i <= text.Length - pattern.Length; i++)
+        {
+            if (patternHash != precomputedHashes[i])
+            {
+                continue;
+            }
+            if (text.Substring(i, pattern.Length) == pattern)
+            {
+                results.Add(i);
+            }
+        }
+
+        return results;
+    }
+}
+```
+
