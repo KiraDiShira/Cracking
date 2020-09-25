@@ -634,14 +634,14 @@ public class StringsHashTable
 Given a text T (book, website, facebook profile) and a pattern P (word, phrase,sentence), find all occurrences of P in T.
 Examples: Your name on a website, Twitter messages about your company.
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h42.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h30.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h43.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h31.png" />
 
 **Naive Algorithm**: For each position i from 0 to |T| − |P|, check character-by-character whether T[i..i + |P| − 1] = P or not. If yes, append i to the result.
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h44.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h32.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h45.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h33.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h46.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h34.png" />
