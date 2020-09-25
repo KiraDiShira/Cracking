@@ -645,6 +645,7 @@ Examples: Your name on a website, Twitter messages about your company.
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h33.png" />
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h34.png" />
+
 ### Rabin-Karp's Algorithm
 
 Need to compare P with all substrings S of T of length |P|. Idea: use hashing to quickly compare P with substrings of T.
@@ -654,15 +655,15 @@ Need to compare P with all substrings S of T of length |P|. Idea: use hashing to
 - Use polynomial hash family 𝒫p with prime p
 - If P != S, the probability Pr[h(P) = h(S)] is at most |P|/p for polynomial hashing
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h48.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h35.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h49.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h36.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h50.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h37.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h51.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h38.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h52.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h39.png" />
 
 <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h53.png" />
 
