@@ -665,13 +665,13 @@ Need to compare P with all substrings S of T of length |P|. Idea: use hashing to
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h39.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h40.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h40.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h41.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h41.png" />
 
 (Non è usato il modulo per semplicità)
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/IMG_20200926_130215.jpg" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/IMG_20200926_130215.jpg" />
 
 <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h55.png" />
 
