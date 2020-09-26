@@ -673,15 +673,15 @@ Need to compare P with all substrings S of T of length |P|. Idea: use hashing to
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/IMG_20200926_130215.jpg" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h55.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h42.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h56.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h43.png" />
 
 Here's the function to pre compute all the hash values of our polynomial hash function on the substrings of the text t with the length equal to the length of the pattern, and with prime number, P and selected integer x. We initialize our answer, big H, as an array of length, length of text minus length of pattern plus one. Which is the number of substrings of the text with length equal to the length of the pattern. Also initialize S by the last substring of the text with a length equal to the length of the pattern. And you compute the hash value for this last substring directly by calling our implementation of polynomial hash with the substring prime number P and integer x. Then we also need to precompute the value of x to the power of length of the pattern and store it in the variable y. To do that we need initialize it with 1 and then multiply it length of P times by x and take this module of p. And then the main for loop, the second for loop goes from right to left and computes the hash values for all the substrings of the text, but for the last one for which we already know the answer. So to compute H[i] given H[i + 1], we multiply it by x. Then we add T[i] and we subtract y, which is x to the power of length of P, by T[i + length of the pattern]. And we take the expression module of p. 
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h57.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h44.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/Hash/Images/h58.png" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/HashTables/Images/h45.png" />
 
 ```c#
 public class RabinKarpAlgorithm
