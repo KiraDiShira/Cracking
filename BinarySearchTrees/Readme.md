@@ -22,23 +22,23 @@ A **Local Search Datastructure** stores a number of elements each with a key com
 - **Insert(x)**: Adds a element with key x
 - **Delete(x)**: Removes the element with key x
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst1.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst1.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst2.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst2.PNG" />
 
 How we can implement this data structure?
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst3.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst3.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst4.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst4.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst5.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst5.PNG" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst6.PNG" />
-
-## Search Trees
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst6.PNG" />
 
 Sorted arrays can search but not update.
+
+## Search Trees
 
 <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst7.PNG" />
 
