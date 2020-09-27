@@ -24,17 +24,17 @@ A **Local Search Datastructure** stores a number of elements each with a key com
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst1.png" />
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst2.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst2.png" />
 
 How we can implement this data structure?
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst3.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst3.png" />
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst4.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst4.png" />
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst5.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst5.png" />
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst6.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst6.png" />
 
 Sorted arrays can search but not update.
 
