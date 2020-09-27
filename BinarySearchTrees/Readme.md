@@ -250,7 +250,35 @@ public void Insert(T key, SearchTree<T> root)
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst20.png" />
 
+La croce rossa è il nodo da cancellare, X invece è il Next
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst21.png" />
+
+```c#
+        public void Delete(TreeNode nodeToDelete)
+        {         
+            if (nodeToDelete.Right == null)
+            {
+                if (nodeToDelete.Parent.Key > nodeToDelete.Key)
+                {
+                    nodeToDelete.Parent.Left = nodeToDelete.Left;
+                }
+                else
+                {
+                    nodeToDelete.Parent.Right = nodeToDelete.Left;
+                }
+            }
+            else
+            {
+                TreeNode next = Next(nodeToDelete);
+                nodeToDelete.Key = next.Key;
+                next.Key = next.Right.Key;
+                next.Left = next.Right.Left;
+                next.Parent = next.Right.Parent;
+                next.Right = next.Right.Right;
+            }
+        }
+  ```
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst22.png" />
 
