@@ -303,4 +303,28 @@ Problem: How do we rearrange tree while maintaining order? With **rotations**
 
 <img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst22.PNG" />
 
+```c#
+public void RotateRight(TreeNode x)
+{
+    TreeNode xParent = x.Parent;
+    TreeNode y = x.Left;
+    TreeNode b = y.Right;
+    y.Parent = x.Parent;
+
+    if (xParent.Key > y.Key)
+    {
+        xParent.Left = y;
+    }
+    else
+    {
+        x.Parent.Right = y;
+    }
+    x.Parent = y;
+    y.Right = x;
+    b.Parent = x;
+    x.Left = b;
+}
+
+```
+
 How to keep a tree balanced. AVL trees.
