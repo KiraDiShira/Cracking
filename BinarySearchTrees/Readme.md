@@ -221,6 +221,7 @@ public IList<SearchTree<T>> RangeSearch(T x, T y, SearchTree<T> root)
 ### Insert - Adds node with key k to the tree
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst18.png" />
+
 ```c#
 public void Insert(T key, SearchTree<T> root)
 {
