@@ -286,22 +286,22 @@ La croce rossa è il nodo da cancellare, X invece è il Next
 
 How long do Binary Search Tree operations take?
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst19.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst23.png" />
 
 We Want left and right subtrees to have approximately the same size. Suppose perfectly balanced:
 - Each subtree half the size of its parent.
 - After log2(n) levels, subtree of size 1.
 - Operations run in O(log(n)) time.
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst20.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst24.png" />
 
 Solution: rebalancing. Rearrange tree to maintain balance.
 
 Problem: How do we rearrange tree while maintaining order? With **rotations**
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst21.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst25.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst22.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst26.png" />
 
 ```c#
 public void RotateRight(TreeNode x)
