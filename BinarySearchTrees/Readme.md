@@ -246,6 +246,14 @@ public void Insert(T key, SearchTree<T> root)
 
 ### Delete
 
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst19.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst20.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst21.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst22.png" />
+
 ## Balance
 
 How long do Binary Search Tree operations take?
