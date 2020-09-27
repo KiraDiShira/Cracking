@@ -40,11 +40,11 @@ Sorted arrays can search but not update.
 
 ## Search Trees
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst7.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst7.png" />
 
 The Search Tree Structure:
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst8.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst8.png" />
 
 X’s key is larger than the key of any descendent of its left child, and smaller than the key of any descendant of its right child.
 
@@ -52,9 +52,9 @@ X’s key is larger than the key of any descendent of its left child, and smalle
 
 ### Find
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst10.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst9.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst9.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst10.png" />
 
 ```c#
 
@@ -101,7 +101,7 @@ public class SearchTreeOperations<T> where T : IComparable<T>
 ```
 If I want to return the closest value in the set when the key is not found:
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst11.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst11.png" />
 
 ```c#
 
@@ -142,15 +142,15 @@ public class SearchTreeOperations<T> where T : IComparable<T>
 
 ### Next - node with the next largest key
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst12.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst12.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst13.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst13.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst14.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst14.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst15.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst15.png" />
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst16.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst16.png" />
 
 ```c#
 
@@ -193,7 +193,7 @@ private SearchTree<T> LeftDescendant(SearchTree<T> node)
 ```
 ### Range Search - A list of nodes with key between x and y
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst17.PNG" />
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst17.png" />
 
 ```c#
 
@@ -220,8 +220,7 @@ public IList<SearchTree<T>> RangeSearch(T x, T y, SearchTree<T> root)
 
 ### Insert - Adds node with key k to the tree
 
-<img src="https://github.com/KiraDiShira/AlgorithmsAndDataStructures/blob/master/RepoFiles/BinarySearchTrees/Images/bst18.PNG" />
-
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst18.png" />
 ```c#
 public void Insert(T key, SearchTree<T> root)
 {
