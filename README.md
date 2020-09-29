@@ -13,6 +13,7 @@
 - [Disjoint Set](https://github.com/KiraDiShira/Cracking/tree/master/DisjointSet#disjoint-sets)
 - [Hash Tables](https://github.com/KiraDiShira/Cracking/tree/master/HashTables#hash-tables)
 - [Binary Search Trees](https://github.com/KiraDiShira/Cracking/tree/master/BinarySearchTrees#binary-search-trees)
+- [Avl Trees](https://github.com/KiraDiShira/Cracking/tree/master/AvlTrees#avl-trees)
 
 
 
