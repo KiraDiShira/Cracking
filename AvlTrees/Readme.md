@@ -56,7 +56,7 @@ We can try to solve this as a recurrence (note that 𝑁(0) = 1):
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl5.png" />
 
-Note that AVL trees with a minimum number of nodes are the worst case examples of AVL tree: every node’s subtrees differ in height by one. You can see examples of such trees below:
+Note that AVL trees with a minimum number of nodes are the worst case examples of AVL tree (cioè la configurazione AVL con minimo numero di nodi è quella di un albero AVL con massima altezza e minor numero possibile di nodi): every node’s subtrees differ in height by one. You can see examples of such trees below:
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl6.png" />
 
