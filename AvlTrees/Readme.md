@@ -62,13 +62,7 @@ Note that AVL trees with a minimum number of nodes are the worst case examples o
 
 If we consider worst case example:
 
-```
-i = ℎ/2
-```
-
-```
-𝑁(ℎ) > 2^(ℎ/2) ⇔ log 𝑁(ℎ) > log 2^(ℎ/2) ⇔ ℎ < 2 log 𝑁(ℎ)
-```
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl7.png" />
 
 Thus, these worst-case AVL trees have height **ℎ = O(log 𝑛)**.
 
@@ -76,7 +70,7 @@ Thus, these worst-case AVL trees have height **ℎ = O(log 𝑛)**.
 
 Updates to the tree can destroy AVL tree property:
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl7.png" />
+
 
 We need a new insertion algorithm that involves rebalancing the tree to maintain the AVL property.
 
