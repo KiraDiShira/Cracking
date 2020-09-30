@@ -68,7 +68,8 @@ Thus, these worst-case AVL trees have height **ℎ = O(log 𝑛)**.
 
 ## Avl Tree implementation
 
-Updates to the tree can destroy AVL tree property:
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl8.png" />
+
 
 
 
