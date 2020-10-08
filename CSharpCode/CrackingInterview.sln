@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdtBinarySearchTree", "AdtBinarySearchTree\AdtBinarySearchTree.csproj", "{25C0545D-FD04-470A-9654-40FA82E3C0E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndStrings", "ArraysAndStrings\ArraysAndStrings.csproj", "{FE0B7365-3CC2-4047-BFF9-EAF10CC18623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysAndStrings", "ArraysAndStrings\ArraysAndStrings.csproj", "{FE0B7365-3CC2-4047-BFF9-EAF10CC18623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdtLinkedList", "AdtLinkedList\AdtLinkedList.csproj", "{606AAC49-054F-4F51-A35A-D30724F352B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingLinkedList", "CrackingLinkedList\CrackingLinkedList.csproj", "{3CE64D39-40E1-4A1A-8DA6-34E7BC9611B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{FE0B7365-3CC2-4047-BFF9-EAF10CC18623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0B7365-3CC2-4047-BFF9-EAF10CC18623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE0B7365-3CC2-4047-BFF9-EAF10CC18623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606AAC49-054F-4F51-A35A-D30724F352B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606AAC49-054F-4F51-A35A-D30724F352B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606AAC49-054F-4F51-A35A-D30724F352B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606AAC49-054F-4F51-A35A-D30724F352B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE64D39-40E1-4A1A-8DA6-34E7BC9611B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE64D39-40E1-4A1A-8DA6-34E7BC9611B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE64D39-40E1-4A1A-8DA6-34E7BC9611B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE64D39-40E1-4A1A-8DA6-34E7BC9611B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
