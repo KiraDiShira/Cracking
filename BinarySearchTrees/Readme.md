@@ -280,6 +280,8 @@ La croce rossa è il nodo da cancellare, X invece è il Next
         }
   ```
 
+Nota che questa implementazione non copre il caso in cul il *node to delete* sia la root.
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst22.png" />
 
 ## Balance
