@@ -58,46 +58,40 @@ X’s key is larger than the key of any descendent of its left child, and smalle
 
 ```c#
 
-public class SearchTree<T>
-{
-    public T Key { get; set; }
-    public SearchTree<T> Left { get; set; }
-    public SearchTree<T> Right { get; set; }
-    public SearchTree<T> Parent { get; set; }
-}
+    public class TreeNode
+    {
+        public int Key { get; set; }
+        public TreeNode Left { get; set; }
+        public TreeNode Right { get; set; }
+        public TreeNode Parent { get; set; }        
+    }
 
 ```
 if I want to return a null value when the key value is not found:
 
 ```c#
 
-public class SearchTreeOperations<T> where T : IComparable<T>
-{
-    public SearchTree<T> Find(T key, SearchTree<T> root)
+    public class BinarySearchTreeOperations
     {
-        if (root == null)
+        public TreeNode Find(int key, TreeNode root)
         {
-            return null; //key value not found
-        }
+            if (key == root.Key)
+            {
+                return root;
+            }
 
-        if (key.Equals(root.Key))
-        {
-            return root;
-        }
+            if (key < root.Key)
+            {
+                return Find(key, root.Left);
+            }
 
-        if (key.CompareTo(root.Key) < 0)
-        {
-            return Find(key, root.Left);
-        }
+            if (key > root.Key)
+            {                
+                return Find(key, root.Right);
+            }
 
-        if (key.CompareTo(root.Key) > 0)
-        {
-            return Find(key, root.Right);
+            throw new Exception("Illegal Find execution");
         }
-
-        throw new Exception("Illegal Find execution");
-    }
-}
 ```
 If I want to return the closest value in the set when the key is not found:
 
@@ -105,38 +99,37 @@ If I want to return the closest value in the set when the key is not found:
 
 ```c#
 
-public class SearchTreeOperations<T> where T : IComparable<T>
-{
-    public SearchTree<T> Find(T key, SearchTree<T> root)
-    {      
-        if (key.Equals(root.Key))
+    public class BinarySearchTreeOperations
+    {
+        public TreeNode Find(int key, TreeNode root)
         {
-            return root;
-        }
-
-        if (key.CompareTo(root.Key) < 0)
-        {
-            if (root.Left == null)
+            if (key == root.Key)
             {
                 return root;
             }
 
-            return Find(key, root.Left);
-        }
-
-        if (key.CompareTo(root.Key) > 0)
-        {
-            if (root.Right == null)
+            if (key < root.Key)
             {
-                return root;
+                if (root.Left == null)
+                {
+                    return root;
+                }
+
+                return Find(key, root.Left);
             }
 
-            return Find(key, root.Right);
-        }
+            if (key > root.Key)
+            {
+                if (root.Right == null)
+                {
+                    return root;
+                }
 
-        throw new Exception("Illegal Find execution");
-    }
-}
+                return Find(key, root.Right);
+            }
+
+            throw new Exception("Illegal Find execution");
+        }
 
 ```
 
@@ -154,41 +147,41 @@ public class SearchTreeOperations<T> where T : IComparable<T>
 
 ```c#
 
-public SearchTree<T> Next(SearchTree<T> node)
-{
-    if (node.Right != null)
-    {
-        return LeftDescendant(node.Right);
-    }
+        public TreeNode Next(TreeNode node)
+        {
+            if (node.Right != null)
+            {
+                return LeftDescendant(node.Right);
+            }
 
-    return RightAncestor(node);
-}
+            return RightAncestor(node);
+        }
 
-private SearchTree<T> RightAncestor(SearchTree<T> node)
-{
-    //if node is the largest element in the tree
-    if (node.Parent == null)
-    {
-        return null;
-    }
+        private TreeNode RightAncestor(TreeNode node)
+        {
+            //if node is the largest element in the tree
+            if (node.Parent == null)
+            {
+                return null;
+            }
 
-    if (node.Key.CompareTo(node.Parent.Key) < 0)
-    {
-        return node.Parent;
-    }
+            if (node.Key < node.Parent.Key)
+            {
+                return node.Parent;
+            }
 
-   return RightAncestor(node.Parent);
-}
+            return RightAncestor(node.Parent);
+        }
 
-private SearchTree<T> LeftDescendant(SearchTree<T> node)
-{
-    if (node.Left == null)
-    {
-        return node;
-    }
+        private TreeNode LeftDescendant(TreeNode node)
+        {
+            if (node.Left == null)
+            {
+                return node;
+            }
 
-    return LeftDescendant(node.Left);
-}
+            return LeftDescendant(node.Left);
+        }
 
 ```
 ### Range Search - A list of nodes with key between x and y
@@ -197,24 +190,24 @@ private SearchTree<T> LeftDescendant(SearchTree<T> node)
 
 ```c#
 
-public IList<SearchTree<T>> RangeSearch(T x, T y, SearchTree<T> root)
-{
-    IList<SearchTree<T>> range = new List<SearchTree<T>>();
-
-    SearchTree<T> node = Find(x, root);
-
-    while (node.Key.CompareTo(y) <= 0)
-    {
-        if (node.Key.CompareTo(x) >= 0)
+        public IList<TreeNode> RangeSearch(int x, int y, TreeNode root)
         {
-            range.Add(node);
+            IList<TreeNode> range = new List<TreeNode>();
+
+            TreeNode node = Find(x, root);
+
+            while (node.Key <= y)
+            {
+                if (node.Key >= x)
+                {
+                    range.Add(node);
+                }
+
+                node = Next(node);
+            }
+
+            return range;
         }
-
-        node = Next(node);
-    }
-
-    return range;
-}
 
 ```
 
@@ -223,25 +216,25 @@ public IList<SearchTree<T>> RangeSearch(T x, T y, SearchTree<T> root)
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/BinarySearchTrees/Images/bst18.png" />
 
 ```c#
-public void Insert(T key, SearchTree<T> root)
-{
-    var parent = Find(key, root);
+        public void Insert(int key, TreeNode root)
+        {
+            var parent = Find(key, root);
 
-    var nodeToInsert = new SearchTree<T>()
-    {
-        Key = key,
-        Parent = parent
-    };
+            var nodeToInsert = new TreeNode()
+            {
+                Key = key,
+                Parent = parent
+            };
 
-    if (key.CompareTo(parent.Key) < 0)
-    {
-        parent.Left = nodeToInsert;
-    }
-    else
-    {
-        parent.Right = nodeToInsert;
-    }
-}
+            if (key < parent.Key)
+            {
+                parent.Left = nodeToInsert;
+            }
+            else
+            {
+                parent.Right = nodeToInsert;
+            }
+        }
 ```
 
 ### Delete
