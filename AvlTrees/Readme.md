@@ -74,3 +74,21 @@ Thus, these worst-case AVL trees have height **ℎ = O(log 𝑛)**.
 
 We need a new insertion algorithm that involves rebalancing the tree to maintain the AVL property.
 
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl11.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl12.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl13.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl14.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl15.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl16.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl17.png" />
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl18.png" />
+
