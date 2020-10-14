@@ -74,6 +74,10 @@ Thus, these worst-case AVL trees have height **ℎ = O(log 𝑛)**.
 
 We need a new insertion algorithm that involves rebalancing the tree to maintain the AVL property.
 
+Note this example, for the same set of keys we have differents shape of the tree. And we want the one with the lowest height.
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari1.png" />
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl11.png" />
