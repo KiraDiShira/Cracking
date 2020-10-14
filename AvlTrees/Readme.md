@@ -126,6 +126,13 @@ What if we have more nodes?
 
 **Example**
 
+if multiple nodes become unbalanced which one we should perform rotations?
+
+Starting from inserted node, lookup the first unbalanced ancestor --> if we rotate this we will fix balance on the whole tree. 
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari9.png" />
+
+*20* and *40* are unbalanced, and following the explained rule we need to rotate *40*. Starting from *40* the insertion path is left-right so this is a *left right rotation*.
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
 
