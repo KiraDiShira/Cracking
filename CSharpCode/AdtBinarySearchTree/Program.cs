@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdtBinarySearchTree.AdtAVLTree;
+using System;
 
 namespace AdtBinarySearchTree
 {
@@ -6,63 +7,28 @@ namespace AdtBinarySearchTree
     {
         static void Main(string[] args)
         {
-            TreeNode root = new TreeNode()
-            {
-                Key = 9,
-                Parent = null
-            };
+            AVLTree tree = new AVLTree();
 
-            TreeNode one = new TreeNode()
-            {
-                Key = 1,
-                               
-            };
+            /* Constructing tree given in the above figure */
+            tree.Root = tree.Insert(tree.Root, 10);
+            tree.Root = tree.Insert(tree.Root, 20);
+            tree.Root = tree.Insert(tree.Root, 30);
+            tree.Root = tree.Insert(tree.Root, 40);
+            tree.Root = tree.Insert(tree.Root, 50);
+            tree.Root = tree.Insert(tree.Root, 25);
 
-            TreeNode six = new TreeNode()
-            {
-                Key = 6,
-               
-            };
+            /* The constructed AVL Tree would be  
+                30  
+                / \  
+            20 40  
+            / \ \  
+            10 25 50  
+            */
+            Console.Write("Preorder traversal" +
+                            " of constructed tree is : ");
+            tree.PreOrder(tree.Root);
 
-            TreeNode seven = new TreeNode()
-            {
-                Key = 7,
-               
-            };
-
-            TreeNode eight = new TreeNode()
-            {
-                Key = 8,
-               
-            };
-
-            root.Left = one;
-            one.Parent = root;
-            one.Right = six;
-            six.Parent = one;
-            six.Right = eight;
-            eight.Parent = six;
-            eight.Left = seven;
-            seven.Parent = eight;
-
-
-
-           
-
-            BinarySearchTreeOperations binarySearchTreeOperations = new BinarySearchTreeOperations();
-
-            //binarySearchTreeOperations.Insert(4, root);
-            //binarySearchTreeOperations.Insert(2, root);
-            //binarySearchTreeOperations.Insert(6, root);
-            //binarySearchTreeOperations.Insert(1, root);
-            //binarySearchTreeOperations.Insert(3, root);
-
-            binarySearchTreeOperations.Delete(root);
-         
-
-            binarySearchTreeOperations.RotateRight(binarySearchTreeOperations.Find(4, root));
-
-            Console.WriteLine("Hello World!");
+            Console.Read();
         }
     }
 }
