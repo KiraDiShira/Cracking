@@ -134,6 +134,12 @@ Starting from inserted node, lookup the first unbalanced ancestor --> if we rota
 
 *20* and *40* are unbalanced, and following the explained rule we need to rotate *40*. Starting from *40* the insertion path is left-right so this is a *left right rotation*.
 
+What if the insertion path has depth more than two from the unbalanced node? which rotations should I apply? In this example I have RLL insertion.
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari10.png" />
+
+The rule say that we need to consider the first two steps from the unbalanced node, so we will apply a RL rotation.
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl11.png" />
