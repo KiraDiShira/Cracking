@@ -88,6 +88,25 @@ balance factor = height of the left subtree - height of the right subtree
 
 If there is a unbalanced node (balance factor < -1 or balance factor > 1) rotations are performed to restore the AVL tree property.
 
+There are four rotarions.
+
+**LL rotation*
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari2.png" />
+
+**LR rotation*
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari3.png" />
+
+**RR rotation*
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari4.png" />
+
+**RL rotation*
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari5.png" />
+
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl11.png" />
