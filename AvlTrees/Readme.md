@@ -90,19 +90,19 @@ If there is a unbalanced node (balance factor < -1 or balance factor > 1) rotati
 
 There are four rotarions.
 
-**LL rotation*
+**LL rotation**
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari2.png" />
 
-**LR rotation*
+**LR rotation**
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari3.png" />
 
-**RR rotation*
+**RR rotation**
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari4.png" />
 
-**RL rotation*
+**RL rotation**
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari5.png" />
 
