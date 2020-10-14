@@ -114,7 +114,17 @@ Note how the *Br* child moves.
 
 The same concepts applies to *RR rotation* but in the opposite side.
 
+**LR rotation with more nodes**
 
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari7.png" />
+
+Instead of apply two rotations we can use this formula: move *C* up and *A* as his right child.
+
+What if we have more nodes?
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari8.png" />
+
+**Example**
 
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
