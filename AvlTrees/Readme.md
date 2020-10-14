@@ -106,6 +106,16 @@ There are four rotarions.
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari5.png" />
 
+**LL rotation with more nodes**
+
+<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari6.png" />
+
+Note how the *Br* child moves.
+
+The same concepts applies to *RR rotation* but in the opposite side.
+
+
+
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
 
