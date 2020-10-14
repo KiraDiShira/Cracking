@@ -78,6 +78,16 @@ Note this example, for the same set of keys we have differents shape of the tree
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/bari1.png" />
 
+We can achieve this if we use the *rotations*.
+
+Let's define the *balance factor*
+
+```
+balance factor = height of the left subtree - height of the right subtree
+```
+
+If there is a unbalanced node (balance factor < -1 or balance factor > 1) rotations are performed to restore the AVL tree property.
+
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
 
 <img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl11.png" />
