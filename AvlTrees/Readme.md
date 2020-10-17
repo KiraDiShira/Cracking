@@ -446,21 +446,4 @@ public class AVLTree
 
 ```
 
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl10.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl11.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl12.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl13.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl14.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl15.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl16.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl17.png" />
-
-<img src="https://github.com/KiraDiShira/Cracking/blob/master/AvlTrees/Images/avl18.png" />
-
+AVL trees can implement all of the basic operations in O(log(n)) time per operation.
